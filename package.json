@@ -2,7 +2,7 @@
   "name": "mahasan",
   "version": "0.1.0",
   "private": true,
-  “main”: “src/App.js”,
+  “main”: “App.js”,
   "proxy": "http://spacelinkers.pythonanywhere.com/",
   "engines": {
     "npm": "6.4.1",
