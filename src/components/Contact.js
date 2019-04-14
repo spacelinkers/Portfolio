@@ -9,15 +9,14 @@ class Contact extends Component {
           <div className="Section" id="contact">
             <h1 className="heading-text">CONTACT WITH ME</h1>
             <p>
-              I'm currently available for freelance projects or full-time work.
-              If you're interested in working with me, please get in touch using
-              one of the methods below. Or feel free to just say hi. I like that
-              too.
+              Have something in mind? Have any question abou me and my work?
+              Feel free to contact with me anytime. It's ok to just say hi. I
+              like that too.
             </p>
             <Row noGutters>
               <Col>
                 <div>
-                  <h3>Have a Project in Mind?</h3>
+                  <h3>Have Something in Mind?</h3>
                 </div>
               </Col>
               <Col>

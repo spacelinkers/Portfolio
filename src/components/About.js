@@ -42,27 +42,34 @@ class About extends Component {
               </Col>
               <Col>
                 <p>
-                  I'm obsessed with making things and even more obsessed with
-                  making things better. I've been in the business of creating
-                  since I hung my first painting on the fridge when I was 3.
-                  After graduating from the University of Kentucky, I've been
-                  actively involved in the web design community for the last 10
-                  years. I've designed websites for small businesses,
-                  corporations, nonprofits, churches, musicians and more. I also
-                  started a design blog, Visual Swirl, where I share
-                  inspiration, tutorials, and resources.
+                  As you know my name, let's talk about somethings else about
+                  me. I was born in February 21 in Gazipur, Bangladesh. But I
+                  grow up in Dhaka.
                 </p>
-                <br />
                 <p>
-                  My specialty is full website strategy, design and development,
-                  making pixel magic in photoshop and turning it into beautiful,
-                  semantic HTML & CSS. My interests, however, extend beyond the
-                  web and I love helping people with branding, print design and
-                  marketing strategy. I even love making designs move by
-                  creating professional motion graphics and video.
+                  I love programming and I am a strong supporter of programming
+                  contest. I myself took part in both the online and onsite
+                  contest.
+                </p>
+                <p>
+                  I have interest in Data Engineering and Machine Learning.
+                  Physics and Astrophysics are another sites that I have keen
+                  interest and I also love traveling.
+                </p>
+                <p>
+                  I am strongly believed in open source and I am a linux user.
+                  All of my work is open source and I think always will be. I
+                  have great interest in linux kernel. I strongly want to
+                  contribute in linux kernel project in future.
                 </p>
               </Col>
             </Row>
+            <p className="mt-4">
+              I am a book lover. As a book lover I read many books. My favorite
+              bengali writter is Sarat Chandra Chattopadhyay and foreign writter
+              is Dan Brown. Moreover I am also a book collector and it is my
+              hobby. I have few hundreds books in my collection.
+            </p>
             <Row />
             <Row>
               <Col>
