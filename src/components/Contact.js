@@ -9,7 +9,7 @@ class Contact extends Component {
           <div className="Section" id="contact">
             <h1 className="heading-text">CONTACT WITH ME</h1>
             <p>
-              Have something in mind? Have any question abou me and my work?
+              Have something in mind? Got any questions about me and my work?
               Feel free to contact with me anytime. It's ok to just say hi. I
               like that too.
             </p>

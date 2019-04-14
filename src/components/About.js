@@ -47,9 +47,8 @@ class About extends Component {
                   grow up in Dhaka.
                 </p>
                 <p>
-                  I love programming and I am a strong supporter of programming
-                  contest. I myself took part in both the online and onsite
-                  contest.
+                  I love programming and I am passionate at programming contest.
+                  I myself took part in both the online and onsite contest.
                 </p>
                 <p>
                   I have interest in Data Engineering and Machine Learning.
@@ -57,18 +56,18 @@ class About extends Component {
                   interest and I also love traveling.
                 </p>
                 <p>
-                  I am strongly believed in open source and I am a linux user.
-                  All of my work is open source and I think always will be. I
-                  have great interest in linux kernel. I strongly want to
+                  I am strongly believed in open source and I prefer using
+                  linux. All of my work is open source and I think always will
+                  be. I have great interest in linux kernel. I strongly want to
                   contribute in linux kernel project in future.
                 </p>
               </Col>
             </Row>
             <p className="mt-4">
-              I am a book lover. As a book lover I read many books. My favorite
-              bengali writter is Sarat Chandra Chattopadhyay and foreign writter
-              is Dan Brown. Moreover I am also a book collector and it is my
-              hobby. I have few hundreds books in my collection.
+              I am a book lover and I have deep affection in reading books. My
+              favorite bengali writter is Sarat Chandra Chattopadhyay and
+              foreign writter is Dan Brown. Moreover I am also a book collector
+              and it is my hobby. I have few hundred books in my collection.
             </p>
             <Row />
             <Row>
