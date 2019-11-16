@@ -125,6 +125,10 @@ class About extends Component {
                     </a>
                     <br />
                     <a>
+                      <i className="fa fa-plus"> Android Development</i>
+                    </a>
+                    <br />
+                    <a>
                       <i className="fa fa-plus"> OOP</i>
                     </a>
                     <br />
@@ -135,6 +139,8 @@ class About extends Component {
                     <i className="fa fa-plus"> Python</i>
                     <br />
                     <i className="fa fa-plus"> Django</i>
+                    <br />
+                    <i className="fa fa-plus"> JAVA/Kotlin</i>
                     <br />
                     <i className="fa fa-plus"> React</i>
                     <br />
