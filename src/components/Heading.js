@@ -18,11 +18,11 @@ class Heading extends Component {
         <Container>
           <div className="Section">
             <p className="Headings">
-              Hello, my name is M A Hasan Molla. I'm a Web Developer, UI
-              Developer and Online Business Consultant based in Louisville, KY.
-              I also have major skills in branding, motion graphics, video, and
-              print design. If you have a project or creative need that I can
-              help with, please get in touch
+              Hello, my name is <b style={{ fontSize: 30 }}>M A Hasan Molla</b>.
+              As I am a Web Developer and Python Developer, I have good
+              knowledge in Django. I also know React, Git. I completed my
+              undergraduate program from Chittagong University of Engineering
+              and Technology(CUET) and my major was CSE.
             </p>
           </div>
         </Container>
