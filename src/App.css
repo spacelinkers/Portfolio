@@ -2,6 +2,7 @@ a {
   color: white;
   text-decoration: none;
   outline: none;
+  transition: all 0.3s;
 }
 a:hover {
   color: #39b54a;
@@ -16,28 +17,15 @@ a:hover {
   background-color: #282c34;
 }
 
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 body {
-  font-family: Helvetica, Arial, sans-serif;
+  /* font-family: Helvetica, Arial, sans-serif; */
+  font-family: "Poppins", sans-serif;
 }
 
 .Custom-flex {
   display: flex;
   flex-flow: row wrap;
-}
-
-.Footer {
-  min-width: 1348px;
-  height: 260px;
-  background-color: black;
-}
-
-.Footer-flex-box {
-  width: 40px;
-}
-
-.Footer-text {
-  padding-top: 30px;
-  color: white;
 }
 
 .fa-plus {
@@ -69,11 +57,6 @@ h3 {
   padding-bottom: 30px;
 }
 
-.MyTopbar {
-  min-width: 1348px;
-  height: 80px;
-}
-
 .MainSection {
   background-color: #f1f1f1;
 }
@@ -83,27 +66,6 @@ h3 {
 }
 .modal-footer {
   justify-content: left;
-}
-
-.navbar {
-  height: 70px;
-  background-color: black;
-  align-content: center;
-}
-
-.nav-link {
-  color: white;
-}
-.navbar-expand-md .navbar-collapse {
-  justify-content: center;
-}
-
-.navbar-expand-md .navbar-nav .nav-link {
-  padding-right: 50px;
-}
-
-.navbar-toggler {
-  border-color: white;
 }
 
 .p {
@@ -123,8 +85,92 @@ h3 {
   color: #808080;
 }
 
-.sticky-top {
-  position: fixed;
-  top: 0;
-  width: 100%;
+.scroll {
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+.sidebar {
+  min-width: 280px;
+  max-width: 280px;
+  height: 100vh;
+  background: #801336;
+  text-align: center;
+  transition: all 0.5s;
+  position: relative;
+  /* margin-left: -250px; */
+}
+
+.vertical-center {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  height: 30%;
+  width: 50%;
+  margin: -15% 0 0 -25%;
+}
+
+.sidebar.is-open {
+  margin-left: 0;
+  transition: 0.5s;
+}
+
+.sidebar-header {
+  background: #801336;
+}
+
+.sidebar-header h3 {
+  padding: 1em;
+}
+
+.sidebar ul p {
+  padding: 10px;
+}
+
+.menu-open {
+  background: #801336;
+}
+
+.nav-item:hover {
+  color: #801336;
+}
+
+.items-menu {
+  background: #6d7fcc;
+}
+
+li a.dropdown-toggle::after {
+  display: inline-flex;
+  position: relative;
+  left: 60%;
+  top: 10%;
+}
+
+.sidebar-header > span {
+  position: relative;
+  float: right;
+  margin: 0.5em;
+  font-size: 2rem;
+  cursor: pointer;
+  display: none;
+}
+.side-menu {
+  height: calc(100vh - 130px);
+  overflow-y: scroll;
+}
+
+.side-menu::-webkit-scrollbar {
+  width: 10px;
+}
+
+.side-menu::-webkit-scrollbar-thumb {
+  background: #5466b3;
+  border-radius: 3px;
+}
+
+.side-menu::-webkit-scrollbar-thumb:hover {
+  background: #3a4c99;
 }

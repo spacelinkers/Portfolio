@@ -1,99 +1,33 @@
-import React, { Component, Fragment } from "react";
-import {
-  Collapse,
-  Nav,
-  Navbar,
-  NavItem,
-  NavLink,
-  NavbarToggler,
-  Row,
-  Col
-} from "reactstrap";
+import React, { Component } from "react";
+import { BrowserRouter as Router } from "react-router-dom";
+import { Row, Col } from "reactstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
 
-import { Link, animateScroll as scroll } from "react-scroll";
+import SideBar from "./SideBar";
 
 class NavBar extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      isOpen: false
+      isOpen: false,
     };
-    this.toggle = this.toggle.bind(this);
   }
 
-  toggle() {
+  toogleSidebar() {
     this.setState({
-      isOpen: !this.state.isOpen
+      isOpen: !this.state.isOpen,
     });
   }
 
-  scrollToTop = () => {
-    scroll.scrollToTop();
-  };
-
   render() {
     return (
-      <Fragment>
+      <Router>
         <div>
-          <Navbar className="navbar sticky-top" expand="md">
-            <NavbarToggler onClick={this.toggle} />
-            <Collapse isOpen={this.state.isOpen} navbar>
-              <Nav navbar>
-                <NavItem>
-                  <NavLink>
-                    <Link
-                      activeClass="active"
-                      to="about"
-                      spy={true}
-                      smooth={true}
-                      offset={-70}
-                      duration={500}
-                    >
-                      <a href="">ABOUT</a>
-                    </Link>
-                  </NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink>
-                    <Link
-                      activeClass="active"
-                      to="work"
-                      spy={true}
-                      smooth={true}
-                      offset={-70}
-                      duration={500}
-                    >
-                      <a href="">WORK</a>
-                    </Link>
-                  </NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink>
-                    <Link
-                      activeClass="active"
-                      to="contact"
-                      spy={true}
-                      smooth={true}
-                      offset={-70}
-                      duration={500}
-                    >
-                      <a href="">CONTACT</a>
-                    </Link>
-                  </NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink
-                    href="https://dry-lake-78525.herokuapp.com/blog/"
-                    target="_blank"
-                  >
-                    BLOG
-                  </NavLink>
-                </NavItem>
-              </Nav>
-            </Collapse>
-          </Navbar>
+          <Col>
+            <SideBar toggle={this.toogleSidebar} isOpen={this.state.isOpen} />
+          </Col>
         </div>
-      </Fragment>
+      </Router>
     );
   }
 }

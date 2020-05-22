@@ -1,24 +1,13 @@
 import React, { Component, Fragment } from "react";
-import {
-  Collapse,
-  Container,
-  Nav,
-  Navbar,
-  NavItem,
-  NavLink,
-  NavbarToggler,
-  Row,
-  Col
-} from "reactstrap";
+import { Container, Row, Col } from "reactstrap";
 
-import me from "../me.png";
 import EducationModal from "./EducationModal";
 
 class About extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      activeItem: []
+      activeItem: [],
     };
   }
 
@@ -37,9 +26,6 @@ class About extends Component {
             <h1 className="heading-text">About me</h1>
 
             <Row noGutters>
-              <Col style={{ textAlign: "center" }}>
-                <img src={me} height="350" />
-              </Col>
               <Col>
                 <p>
                   As you know my name, let's talk about somethings else about
