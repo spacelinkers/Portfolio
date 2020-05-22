@@ -17,10 +17,10 @@ a:hover {
   background-color: #282c34;
 }
 
-@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 body {
-  /* font-family: Helvetica, Arial, sans-serif; */
-  font-family: "Poppins", sans-serif;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+    Helvetica, Arial, "Lucida Grande", sans-serif;
+  color: #000000;
 }
 
 .Custom-flex {
@@ -85,92 +85,41 @@ h3 {
   color: #808080;
 }
 
-.scroll {
-  height: 100vh;
-  overflow-y: scroll;
-}
-
 /* ---------------------------------------------------
     SIDEBAR STYLE
 ----------------------------------------------------- */
 .sidebar {
+  display: flex;
+  flex-direction: column;
   min-width: 280px;
   max-width: 280px;
+  top: 0;
+  left: 0;
   height: 100vh;
-  background: #801336;
   text-align: center;
-  transition: all 0.5s;
-  position: relative;
-  /* margin-left: -250px; */
+  position: fixed;
 }
 
-.vertical-center {
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  height: 30%;
-  width: 50%;
-  margin: -15% 0 0 -25%;
+.primary-bg {
+  background-color: #801336;
 }
 
-.sidebar.is-open {
-  margin-left: 0;
-  transition: 0.5s;
-}
+/* ---------------------------------------------------
+    NEW STYLE
+----------------------------------------------------- */
 
-.sidebar-header {
-  background: #801336;
-}
-
-.sidebar-header h3 {
-  padding: 1em;
-}
-
-.sidebar ul p {
-  padding: 10px;
-}
-
-.menu-open {
-  background: #801336;
-}
-
-.nav-item:hover {
-  color: #801336;
-}
-
-.items-menu {
-  background: #6d7fcc;
-}
-
-li a.dropdown-toggle::after {
-  display: inline-flex;
-  position: relative;
-  left: 60%;
-  top: 10%;
-}
-
-.sidebar-header > span {
-  position: relative;
+.details_style {
   float: right;
-  margin: 0.5em;
-  font-size: 2rem;
-  cursor: pointer;
-  display: none;
-}
-.side-menu {
-  height: calc(100vh - 130px);
-  overflow-y: scroll;
+  margin-right: 50px;
 }
 
-.side-menu::-webkit-scrollbar {
-  width: 10px;
+.name-style {
+  font-family: Bebas Neue, cursive, Arial, Helvetica, sans-serif;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+  font-size: 4 rem;
 }
 
-.side-menu::-webkit-scrollbar-thumb {
-  background: #5466b3;
-  border-radius: 3px;
-}
-
-.side-menu::-webkit-scrollbar-thumb:hover {
-  background: #3a4c99;
+.primary-text {
+  color: #801336;
 }

@@ -8,7 +8,7 @@ import {
   NavLink,
   NavbarToggler,
   Row,
-  Col
+  Col,
 } from "reactstrap";
 
 class Heading extends Component {
@@ -16,7 +16,11 @@ class Heading extends Component {
     return (
       <Fragment>
         <Container>
-          <div className="Section">
+          <div className="Section" style={{ marginTop: "80px" }}>
+            <h2 className="name-style">
+              M A <span className="primary-text">HASAN </span>MOLLA
+            </h2>
+
             <p className="Headings">
               Hello, my name is <b style={{ fontSize: 30 }}>M A Hasan Molla</b>.
               As I am a Web Developer and Python Developer, I have good

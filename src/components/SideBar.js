@@ -1,101 +1,133 @@
-import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { NavItem, NavLink, Nav } from "reactstrap";
+import React, { Component, Fragment, useState } from "react";
+import {
+  Collapse,
+  Nav,
+  Navbar,
+  NavItem,
+  NavLink,
+  NavbarToggler,
+  Row,
+  Col,
+} from "reactstrap";
 import classNames from "classnames";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 
 import me from "../me.png";
 
-const SideBar = ({ isOpen, toggle }) => (
-  <div className={classNames("sidebar ", { "is-open": isOpen })}>
-    <div className="side-menu vertical-center">
-      <Nav vertical className="list-unstyled pb-3">
-        <NavItem>
-          <NavLink>
-            <img src={me} height="80" />
-          </NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink>
-            <Link
-              activeClass="active"
-              to="about"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-            >
-              About
-            </Link>
-          </NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink>
-            <Link
-              activeClass="active"
-              to="experience"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-            >
-              Experience
-            </Link>
-          </NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink>
-            <Link
-              activeClass="active"
-              to="work"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-            >
-              Skills
-            </Link>
-          </NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink>
-            <Link
-              activeClass="active"
-              to="contact"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-            >
-              Education
-            </Link>
-          </NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink>
-            <Link
-              activeClass="active"
-              to="contact"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-            >
-              Contact
-            </Link>
-          </NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink
-            href="https://dry-lake-78525.herokuapp.com/blog/"
-            target="_blank"
-          >
-            Blog
-          </NavLink>
-        </NavItem>
-      </Nav>
-    </div>
-  </div>
-);
+class SideBar extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      isOpen: false,
+    };
+    this.toggle = this.toggle.bind(this);
+  }
+
+  toggle() {
+    this.setState({
+      isOpen: !this.state.isOpen,
+    });
+  }
+
+  render() {
+    return (
+      <Fragment>
+        <Navbar
+          className="navbar fixed-top sidebar primary-bg navbar-dark"
+          expand="md"
+        >
+          <NavbarToggler onClick={this.toggle} />
+          <Collapse isOpen={this.state.isOpen} navbar>
+            <Nav vertical className="list-unstyled pb-3">
+              <NavItem>
+                <NavLink>
+                  <img src={me} height="100px" />
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink>
+                  <Link
+                    activeClass="active"
+                    to="about"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                  >
+                    <a href="">About</a>
+                  </Link>
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink>
+                  <Link
+                    activeClass="active"
+                    to="experience"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                  >
+                    <a href="">Experience</a>
+                  </Link>
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink>
+                  <Link
+                    activeClass="active"
+                    to="work"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                  >
+                    <a href="">Skills</a>
+                  </Link>
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink>
+                  <Link
+                    activeClass="active"
+                    to="contact"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                  >
+                    <a href="">Education</a>
+                  </Link>
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink>
+                  <Link
+                    activeClass="active"
+                    to="contact"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                  >
+                    <a href="">Contact</a>
+                  </Link>
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink
+                  href="https://dry-lake-78525.herokuapp.com/blog/"
+                  target="_blank"
+                >
+                  Blog
+                </NavLink>
+              </NavItem>
+            </Nav>
+          </Collapse>
+        </Navbar>
+      </Fragment>
+    );
+  }
+}
 
 export default SideBar;
