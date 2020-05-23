@@ -1,11 +1,12 @@
 import React, { Component, Fragment } from "react";
 import "./App.css";
 
-import Heading from "./components/Heading.js";
-import About from "./components/About.js";
-import Work from "./components/Work.js";
-import Contact from "./components/Contact.js";
-import SideBar from "./components/SideBar";
+import SideBar from "./Pages/SideBar";
+import About from "./Pages/About.js";
+import Experience from "./Pages/Experience.js";
+import Skills from "./Pages/Skills.js";
+import Education from "./Pages/Education.js";
+import Contact from "./Pages/Contact.js";
 
 class App extends Component {
   render() {
@@ -15,15 +16,18 @@ class App extends Component {
           <SideBar />
         </div>
 
-        <div className="details_style">
-          <div>
-            <Heading />
-          </div>
+        <div className="body-style">
           <div>
             <About />
           </div>
           <div>
-            <Work />
+            <Experience />
+          </div>
+          <div>
+            <Skills />
+          </div>
+          <div>
+            <Education />
           </div>
           <div>
             <Contact />

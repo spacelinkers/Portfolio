@@ -76,7 +76,7 @@ class SideBar extends Component {
                 <NavLink>
                   <Link
                     activeClass="active"
-                    to="work"
+                    to="skills"
                     spy={true}
                     smooth={true}
                     offset={-70}
@@ -90,7 +90,7 @@ class SideBar extends Component {
                 <NavLink>
                   <Link
                     activeClass="active"
-                    to="contact"
+                    to="education"
                     spy={true}
                     smooth={true}
                     offset={-70}

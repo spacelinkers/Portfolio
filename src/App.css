@@ -32,24 +32,6 @@ body {
   color: #39b54a;
 }
 
-h1 {
-  font-family: "Raleway Bold", Helvetica, Arial, sans;
-  font-size: 50px;
-  text-transform: uppercase;
-  font-weight: bolder;
-}
-
-h3 {
-  font-family: "Raleway Bold", Helvetica, Arial, sans;
-  font-size: 30px;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
-.Headings {
-  text-align: center;
-  font-size: 20px;
-}
 .heading-text {
   text-align: center;
   color: #39b54a;
@@ -108,18 +90,73 @@ h3 {
     NEW STYLE
 ----------------------------------------------------- */
 
-.details_style {
+.body-style {
   float: right;
   margin-right: 50px;
 }
 
-.name-style {
+.primary-text {
+  color: #801336;
+}
+
+.secondary-text {
+  color: #49535c;
+}
+
+.super-title {
   font-family: Bebas Neue, cursive, Arial, Helvetica, sans-serif;
   letter-spacing: 1.5px;
   font-weight: 700;
-  font-size: 4 rem;
+  font-size: 55px;
 }
 
-.primary-text {
-  color: #801336;
+.title {
+  font-family: Bebas Neue, cursive, Arial, Helvetica, sans-serif;
+  letter-spacing: 1.2px;
+  font-weight: 500;
+}
+
+.sub-title {
+  font-family: Arial, Helvetica Neue, sans-serif;
+  letter-spacing: 1px;
+  font-weight: 300;
+  margin-bottom: 25px;
+}
+
+.headings {
+  font-family: Arial, Helvetica Neue, sans-serif;
+  letter-spacing: 1px;
+  font-weight: 200;
+  margin-bottom: 10px;
+}
+
+.para {
+  font-size: 16px;
+  color: #3d3d3d;
+}
+
+.mg-b5 {
+  margin-bottom: 50px;
+}
+
+.mg-t5 {
+  margin-top: 50px;
+}
+
+.icon-x {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 3.5rem;
+  margin-right: 1rem;
+  margin-bottom: 8px;
+}
+
+.icon-bg {
+  height: 60px;
+  min-width: 60px;
+  padding: 18px;
+  background-color: #49535c;
+  color: #fff;
+  border-radius: 100%;
+  margin-right: 15px;
 }

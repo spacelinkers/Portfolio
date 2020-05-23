@@ -1,9 +1,9 @@
 import React, { Component, Fragment } from "react";
 import { Container, Row, Col } from "reactstrap";
 
-import EducationModal from "./EducationModal";
+import EducationModal from "../components/EducationModal";
 
-class About extends Component {
+class Skills extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -22,32 +22,11 @@ class About extends Component {
     return (
       <Fragment>
         <Container>
-          <div className="Section" id="about">
-            <h1 className="heading-text">About me</h1>
+          <div className="Section" id="skills">
+            <h1 className="title secondary-text mg-b5">Skills</h1>
 
             <Row noGutters>
-              <Col>
-                <p>
-                  As you know my name, let's talk about somethings else about
-                  me. I was born in February 21 in Gazipur, Bangladesh. But I
-                  grow up in Dhaka.
-                </p>
-                <p>
-                  I love programming and I am passionate at programming contest.
-                  I myself took part in both the online and onsite contest.
-                </p>
-                <p>
-                  I have interest in Data Engineering and Machine Learning.
-                  Physics and Astrophysics are another sites that I have keen
-                  interest and I also love traveling.
-                </p>
-                <p>
-                  I am strongly believed in open source and I prefer using
-                  linux. All of my work is open source and I think always will
-                  be. I have great interest in linux kernel. I strongly want to
-                  contribute in linux kernel project in future.
-                </p>
-              </Col>
+              <Col></Col>
             </Row>
             <p className="mt-4">
               I am a book lover and I have deep affection in reading books. My
@@ -149,4 +128,4 @@ class About extends Component {
   }
 }
 
-export default About;
+export default Skills;
