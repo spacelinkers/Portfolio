@@ -5,9 +5,7 @@ import {
   CardImg,
   CardTitle,
   CardSubtitle,
-  Container,
-  Row,
-  Col
+  Col,
 } from "reactstrap";
 
 import WorkModal from "./WorkModal";
@@ -16,7 +14,7 @@ class SingleProj extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      activeItem: this.props.activeItem
+      activeItem: this.props.activeItem,
     };
   }
 
@@ -30,36 +28,29 @@ class SingleProj extends Component {
   render() {
     return (
       <Fragment>
-        <Col className="mb-3 col-4">
-          <Card style={{ maxWidth: 310, maxHeight: 310 }}>
-            <CardBody>
-              <CardImg
-                top
-                width="100%"
-                src={this.state.activeItem.image}
-                className="pb-3"
-                style={{ maxHeight: 210, cursor: "pointer" }}
-                onClick={() => this.showItem(this.state.activeItem)}
-              />
-              <CardTitle>
-                <h4>{this.state.activeItem.title}</h4>
-              </CardTitle>
-              <CardSubtitle>
-                <a>
-                  <i
-                    className="fa fa-tags"
-                    style={{ fontSize: 12, color: "grey" }}
-                  >
-                    {this.state.activeItem.tag.map(function(taglist, index) {
-                      return <a className="mr-2">{taglist.tag_name}</a>;
-                    })}
-                    {/* {this.state.activeItem.tag} */}
-                  </i>
-                </a>
-              </CardSubtitle>
-            </CardBody>
-          </Card>
-        </Col>
+        <Card style={{ maxWidth: 310, maxHeight: 310 }}>
+          <CardBody>
+            <CardImg
+              top
+              width="100%"
+              src={this.state.activeItem.image}
+              className="pb-3"
+              style={{ maxHeight: 210, cursor: "pointer" }}
+              onClick={() => this.showItem(this.state.activeItem)}
+            />
+            <CardTitle>
+              <h5 className="headings">{this.state.activeItem.title}</h5>
+            </CardTitle>
+            <CardSubtitle>
+              <a style={{ fontSize: 12, color: "grey" }}>
+                <i className="fa fa-tags pr-2" />
+                {this.state.activeItem.tag.map(function (taglist, index) {
+                  return <a className="mr-2">{taglist.tag_name}</a>;
+                })}
+              </a>
+            </CardSubtitle>
+          </CardBody>
+        </Card>
 
         {this.state.modal ? (
           <WorkModal activeItem={this.state.activeItem} toggle={this.toggle} />

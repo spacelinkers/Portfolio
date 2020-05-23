@@ -11,7 +11,7 @@ class Experience extends Component {
           <div className="Section" id="experience">
             <h1 className="title secondary-text  mg-b5">Experience</h1>
 
-            <h3 className="sub-title ">Software Engineer</h3>
+            <h3 className="sub-title">Software Engineer</h3>
             <div>
               <h4 className="headings">Samsung R&D Institue Bangladesh</h4>
               <p className="para">
