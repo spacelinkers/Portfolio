@@ -6,10 +6,7 @@ import {
   NavItem,
   NavLink,
   NavbarToggler,
-  Row,
-  Col,
 } from "reactstrap";
-import classNames from "classnames";
 import { Link } from "react-scroll";
 
 import me from "../me.png";
@@ -19,8 +16,29 @@ class SideBar extends Component {
     super(props);
     this.state = {
       isOpen: false,
+      layoutMode: this.getLayoutMode(),
     };
     this.toggle = this.toggle.bind(this);
+    this.onResize = this.onResize.bind(this);
+  }
+
+  componentDidMount() {
+    window.addEventListener("resize", this.onResize);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("resize", this.onResize);
+  }
+
+  onResize() {
+    this.setState({
+      layoutMode: this.getLayoutMode(),
+    });
+  }
+
+  getLayoutMode() {
+    console.log(window.innerWidth);
+    return window.innerWidth > 1000 ? "desktop" : "mobile";
   }
 
   toggle() {
@@ -33,7 +51,8 @@ class SideBar extends Component {
     return (
       <Fragment>
         <Navbar
-          className="navbar fixed-top sidebar primary-bg navbar-dark"
+          id={this.state.layoutMode === "desktop" ? "sidebar" : ""}
+          className="navbar fixed-top primary-bg navbar-dark"
           expand="md"
         >
           <NavbarToggler onClick={this.toggle} />
