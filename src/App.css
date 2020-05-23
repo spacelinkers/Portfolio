@@ -87,6 +87,10 @@ body {
   background-color: #801336;
 }
 
+.secondary-bg {
+  background-color: #691c35;
+}
+
 /* ---------------------------------------------------
     NEW STYLE
 ----------------------------------------------------- */
@@ -152,14 +156,6 @@ body {
   margin-top: 70px;
 }
 
-.icon-x {
-  text-align: center;
-  font-size: 1.5rem;
-  line-height: 3.5rem;
-  margin-right: 1rem;
-  margin-bottom: 8px;
-}
-
 .icon-bg {
   height: 60px;
   min-width: 60px;
@@ -168,4 +164,11 @@ body {
   color: #fff;
   border-radius: 100%;
   margin-right: 15px;
+}
+
+.image-circle {
+  height: 150px;
+  min-width: 150px;
+  border-radius: 100%;
+  border: 5px solid #691c35;
 }

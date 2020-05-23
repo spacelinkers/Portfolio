@@ -12,14 +12,47 @@ class Experience extends Component {
             <h1 className="title secondary-text  mg-b5">Experience</h1>
 
             <h3 className="sub-title ">Software Engineer</h3>
-            <h4 className="headings">Samsung R&D Institue Bangladesh</h4>
+            <div>
+              <h4 className="headings">Samsung R&D Institue Bangladesh</h4>
+              <p className="para">
+                Software Engineer
+                <span className="primary-text">
+                  {" "}
+                  (December, 2019 - present)
+                </span>
+              </p>
 
-            <p className="para">
-              I am a book lover and I have deep affection in reading books. My
-              favorite bengali writter is Sarat Chandra Chattopadhyay and
-              foreign writter is Dan Brown. Moreover I am also a book collector
-              and it is my hobby. I have few hundred books in my collection.
-            </p>
+              <ul style={{ paddingLeft: "35px" }}>
+                <li>
+                  <p className="para">Tizen.NET</p>
+                </li>
+                <li>
+                  <p className="para">Samsung Blockchain</p>
+                </li>
+                <li>
+                  <p className="para">Android Development</p>
+                </li>
+              </ul>
+            </div>
+            <div className="mg-t5">
+              <h4 className="headings">Samsung R&D Institue Bangladesh</h4>
+              <p className="para">
+                Constructual
+                <span className="primary-text">
+                  {" "}
+                  (June, 2019 - December, 2019)
+                </span>
+              </p>
+
+              <ul style={{ paddingLeft: "35px" }}>
+                <li>
+                  <p className="para">Samsung Blockchain</p>
+                </li>
+                <li>
+                  <p className="para">Android Development</p>
+                </li>
+              </ul>
+            </div>
           </div>
         </Container>
       </Fragment>

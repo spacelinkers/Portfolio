@@ -32,10 +32,10 @@ class Education extends Component {
             <h4 className="headings">
               Chittagong University of Engineeering and Technology
             </h4>
-            <p>
+            <p className="para">
               BSc in CSE{" "}
               <span className="primary-text">
-                (January, 2012 - December, 2017)
+                (March, 2013 - December, 2017)
               </span>
             </p>
 

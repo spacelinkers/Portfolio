@@ -41,7 +41,7 @@ class SideBar extends Component {
             <Nav vertical className="list-unstyled pb-3">
               <NavItem>
                 <NavLink>
-                  <img src={me} height="100px" />
+                  <img src={me} className="image-circle" />
                 </NavLink>
               </NavItem>
               <NavItem>
