@@ -37,7 +37,7 @@ class Experience extends Component {
             <div className="mg-t5">
               <h4 className="headings">Samsung R&D Institue Bangladesh</h4>
               <p className="para">
-                Constructual
+                Contractual
                 <span className="primary-text">
                   {" "}
                   (June, 2019 - December, 2019)
