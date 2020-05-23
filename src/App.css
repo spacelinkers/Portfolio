@@ -23,6 +23,12 @@ body {
   color: #000000;
 }
 
+@media screen and (min-width: 1000px) {
+  body {
+    margin-left: 270px;
+  }
+}
+
 .Custom-flex {
   display: flex;
   flex-flow: row wrap;
@@ -58,10 +64,15 @@ body {
 }
 
 .Section {
-  max-width: 960px;
+  max-width: auto;
   min-height: 500px;
-  margin: auto;
   margin-bottom: 70px;
+}
+@media screen and (min-width: 1000px) {
+  .Section {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
 }
 
 .socail-media {
@@ -81,6 +92,9 @@ body {
   height: 100%;
   text-align: center;
   position: fixed;
+}
+#collapse-sidebar {
+  text-align: center;
 }
 
 .coll {
@@ -106,10 +120,10 @@ body {
     NEW STYLE
 ----------------------------------------------------- */
 
-.body-style {
+/* .body-style {
   float: right;
-  padding: 25px;
-}
+  margin-right: 50px;
+} */
 
 .primary-text {
   color: #801336;

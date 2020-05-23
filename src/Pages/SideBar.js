@@ -51,7 +51,9 @@ class SideBar extends Component {
     return (
       <Fragment>
         <Navbar
-          id={this.state.layoutMode === "desktop" ? "sidebar" : ""}
+          id={
+            this.state.layoutMode === "desktop" ? "sidebar" : "collapse-sidebar"
+          }
           className="navbar fixed-top primary-bg navbar-dark"
           expand="md"
         >
