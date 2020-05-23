@@ -6,7 +6,7 @@ import About from "./Pages/About.js";
 import Experience from "./Pages/Experience.js";
 import Skills from "./Pages/Skills.js";
 import Education from "./Pages/Education.js";
-import Contact from "./Pages/Contact.js";
+import Certification from "./Pages/Certification.js";
 
 class App extends Component {
   render() {
@@ -20,17 +20,25 @@ class App extends Component {
           <div>
             <About />
           </div>
-          <div>
+          <hr className="line" />
+
+          <div className="mg-b5 mg-t7">
             <Experience />
           </div>
-          <div>
+          <hr className="line" />
+
+          <div className="mg-b5 mg-t7">
             <Skills />
           </div>
-          <div>
+          <hr className="line" />
+
+          <div className="mg-b5 mg-t7">
             <Education />
           </div>
-          <div>
-            <Contact />
+          <hr className="line" />
+
+          <div className="mg-b5 mg-t7">
+            <Certification />
           </div>
         </div>
       </Fragment>

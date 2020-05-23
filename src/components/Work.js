@@ -7,7 +7,7 @@ import {
   CardSubtitle,
   Container,
   Row,
-  Col
+  Col,
 } from "reactstrap";
 
 import SingleProj from "./SingleProj.js";
@@ -28,11 +28,10 @@ import SingleProj from "./SingleProj.js";
 // ];
 
 class Work extends Component {
-
   constructor(props) {
     super(props);
     this.state = {
-      activeItem: []
+      activeItem: [],
     };
   }
 
@@ -42,23 +41,19 @@ class Work extends Component {
 
   getData() {
     fetch("http://spacelinkers.pythonanywhere.com/project/list/")
-      .then(projlist => projlist.json())
-      .then(projlist => this.setState({ activeItem: projlist }));
+      .then((projlist) => projlist.json())
+      .then((projlist) => this.setState({ activeItem: projlist }));
   }
 
   render() {
-    var workList = this.state.activeItem.map(activeItem => (
+    var workList = this.state.activeItem.map((activeItem) => (
       <SingleProj activeItem={activeItem} />
     ));
     return (
-      <Fragment>
-        <Container>
-          <div className="Section" id="work">
-            <h1 className="heading-text">MY WORK</h1>
-            <Row noGutters>{workList}</Row>
-          </div>
-        </Container>
-      </Fragment>
+      <div>
+        <h3 className="sub-title mg-t5">Projects</h3>
+        <Row noGutters>{workList}</Row>
+      </div>
     );
   }
 }

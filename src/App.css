@@ -59,6 +59,7 @@ body {
 
 .Section {
   max-width: 960px;
+  min-height: 500px;
   margin: auto;
   margin-bottom: 70px;
 }
@@ -103,6 +104,10 @@ body {
   color: #49535c;
 }
 
+.line {
+  border: "1px solid rgb(207, 207, 207)";
+}
+
 .super-title {
   font-family: Bebas Neue, cursive, Arial, Helvetica, sans-serif;
   letter-spacing: 1.5px;
@@ -140,7 +145,11 @@ body {
 }
 
 .mg-t5 {
-  margin-top: 50px;
+  margin-top: 70px;
+}
+
+.mg-t7 {
+  margin-top: 70px;
 }
 
 .icon-x {

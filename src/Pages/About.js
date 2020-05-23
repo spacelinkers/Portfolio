@@ -63,7 +63,7 @@ class About extends Component {
                 <FontAwesomeIcon icon={faTwitter} className="fa-3x icon-bg" />
               </a>
 
-              <a href="" target="_blank">
+              <a>
                 <FontAwesomeIcon icon={faFacebook} className="fa-3x icon-bg" />
               </a>
             </div>

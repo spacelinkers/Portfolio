@@ -104,13 +104,13 @@ class SideBar extends Component {
                 <NavLink>
                   <Link
                     activeClass="active"
-                    to="contact"
+                    to="certification"
                     spy={true}
                     smooth={true}
                     offset={-70}
                     duration={500}
                   >
-                    <a href="">Contact</a>
+                    <a href="">Certification</a>
                   </Link>
                 </NavLink>
               </NavItem>

@@ -1,23 +1,13 @@
 import React, { Component, Fragment } from "react";
 import { Container, Row, Col } from "reactstrap";
 
-import EducationModal from "../components/EducationModal";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinux } from "@fortawesome/free-brands-svg-icons";
+import { faBook, faCode } from "@fortawesome/free-solid-svg-icons";
+
+import Work from "../components/Work";
 
 class Skills extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      activeItem: [],
-    };
-  }
-
-  toggle = () => {
-    this.setState({ modal: !this.state.modal });
-  };
-
-  showItem(activeItem) {
-    this.setState({ activeItem: activeItem, modal: !this.state.modal });
-  }
   render() {
     return (
       <Fragment>
@@ -25,104 +15,63 @@ class Skills extends Component {
           <div className="Section" id="skills">
             <h1 className="title secondary-text mg-b5">Skills</h1>
 
-            <Row noGutters>
-              <Col></Col>
-            </Row>
-            <p className="mt-4">
-              I am a book lover and I have deep affection in reading books. My
-              favorite bengali writter is Sarat Chandra Chattopadhyay and
-              foreign writter is Dan Brown. Moreover I am also a book collector
-              and it is my hobby. I have few hundred books in my collection.
-            </p>
-            <Row />
-            <Row>
-              <Col>
-                <h3>Things I love</h3>
-                <div className="Custom-flex">
-                  <div className="about-flex-box">
-                    <a
-                      href="https://www.linux.com/"
-                      target="_blank"
-                      style={{ color: "#39b54a" }}
-                    >
-                      <i className="fa fa-linux fa-3x " />
-                    </a>
-                  </div>
-                  <div className="about-flex-box">
-                    <a
-                      href="https://www.loc.gov/"
-                      target="_blank"
-                      style={{ color: "#39b54a" }}
-                    >
-                      <i className="fa fa-book fa-3x" />
-                    </a>
-                  </div>
-                  <div className="about-flex-box">
-                    <a
-                      href="https://icpc.baylor.edu/"
-                      target="_blank"
-                      style={{ color: "#39b54a" }}
-                    >
-                      <i className="fa fa-code fa-3x" />
-                    </a>
-                  </div>
-                </div>
-                <Col className="mt-5 pl-0">
-                  <h3>Education</h3>
-                  <div className="Custom-flex">
-                    <div className="about-flex-box">
-                      <i
-                        className="ml-5 fa fa-graduation-cap fa-3x "
-                        style={{ color: "black", cursor: "pointer" }}
-                        onClick={() => this.showItem(this.state.activeItem)}
-                      />
-                    </div>
-                  </div>
-                </Col>
-              </Col>
+            <div>
+              <h3 className="sub-title">Programming Languages & Tools</h3>
 
-              <Col>
-                <h3>Things I can do</h3>
-                <Row noGutters>
-                  <Col>
-                    <a>
-                      <i className="fa fa-plus"> Web Development</i>
-                    </a>
-                    <br />
-                    <a>
-                      <i className="fa fa-plus"> Android Development</i>
-                    </a>
-                    <br />
-                    <a>
-                      <i className="fa fa-plus"> OOP</i>
-                    </a>
-                    <br />
-                  </Col>
-                  <Col>
-                    <i className="fa fa-plus"> C/C++</i>
-                    <br />
-                    <i className="fa fa-plus"> Python</i>
-                    <br />
-                    <i className="fa fa-plus"> Django</i>
-                    <br />
-                    <i className="fa fa-plus"> JAVA/Kotlin</i>
-                    <br />
-                    <i className="fa fa-plus"> React</i>
-                    <br />
-                    <i className="fa fa-plus"> HTML/CSS</i>
-                    <br />
-                  </Col>
-                </Row>
-              </Col>
-            </Row>
+              <i className="fa fa-plus secondary-text"> C/C++</i>
+              <br />
+              <i className="fa fa-plus secondary-text"> Python</i>
+              <br />
+              <i className="fa fa-plus secondary-text"> Django</i>
+              <br />
+              <i className="fa fa-plus secondary-text"> React</i>
+              <br />
+              <i className="fa fa-plus secondary-text"> AWS Lambda</i>
+              <br />
+              <i className="fa fa-plus secondary-text"> JAVA/Kotlin</i>
+              <br />
+              <i className="fa fa-plus secondary-text"> HTML/CSS</i>
+              <br />
+            </div>
+            <div>
+              <h3 className="sub-title mg-t5">Things I can do</h3>
+
+              <a>
+                <i className="fa fa-plus secondary-text"> Web Development</i>
+              </a>
+              <br />
+
+              <a>
+                <i className="fa fa-plus secondary-text">
+                  {" "}
+                  Android Development
+                </i>
+              </a>
+              <br />
+              <a>
+                <i className="fa fa-plus secondary-text"> OOP</i>
+              </a>
+              <br />
+            </div>
+            <div>
+              <Work />
+            </div>
+            <div>
+              <h3 className="sub-title mg-t5">Things I love</h3>
+
+              <a href="https://www.linux.com/" target="_blank">
+                <FontAwesomeIcon icon={faLinux} className="fa-3x icon-bg" />
+              </a>
+
+              <a href="https://www.loc.gov/" target="_blank">
+                <FontAwesomeIcon icon={faBook} className="fa-3x icon-bg" />
+              </a>
+              <a href="https://icpc.baylor.edu/" target="_blank">
+                <FontAwesomeIcon icon={faCode} className="fa-3x icon-bg" />
+              </a>
+            </div>
           </div>
         </Container>
-        {this.state.modal ? (
-          <EducationModal
-            activeItem={this.state.activeItem}
-            toggle={this.toggle}
-          />
-        ) : null}
       </Fragment>
     );
   }

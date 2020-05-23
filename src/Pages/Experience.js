@@ -9,10 +9,12 @@ class Experience extends Component {
       <Fragment>
         <Container>
           <div className="Section" id="experience">
-            <h1 className="title secondary-text mg-b5">Experience</h1>
+            <h1 className="title secondary-text  mg-b5">Experience</h1>
+
             <h3 className="sub-title ">Software Engineer</h3>
             <h4 className="headings">Samsung R&D Institue Bangladesh</h4>
-            <p>
+
+            <p className="para">
               I am a book lover and I have deep affection in reading books. My
               favorite bengali writter is Sarat Chandra Chattopadhyay and
               foreign writter is Dan Brown. Moreover I am also a book collector
