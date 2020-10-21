@@ -22,23 +22,16 @@ class About extends Component {
               <span className="primary-text">josen221@gmail.com</span>
             </p>
             <p className="para">
-              Hello, my name is M A Hasan Molla. As I am a Web Developer and
-              Python Developer, I have good knowledge in Django. I also know
-              React, Git. I completed my undergraduate program from Chittagong
-              University of Engineering and Technology (CUET) and my major was
-              CSE.
+            I am a passionate Software Developer experience with Django, React, 
+            PostgreSQL, and AWS, also having good exposure to Blockchain and Cryptocurrency 
+            based technologies like Ethereum and Tron. Working as an Engineer at 
+            Samsung R&D Institute Bangladesh for 1.5 years. Love to participate in 
+            programming contests and an enthusiastic team player.
             </p>
             <p className="para">
-              As you know my name, let's talk about somethings else about me. I
-              was born in February 21 in Gazipur, Bangladesh. But I grow up in
-              Dhaka. I love programming and I am passionate at programming
-              contest. I myself took part in both the online and onsite contest.
-              I have interest in Data Engineering and Machine Learning. Physics
-              and Astrophysics are another sites that I have keen interest and I
-              also love traveling. I am strongly believed in open source and I
-              prefer using linux. All of my work is open source and I think
-              always will be. I have great interest in linux kernel. I strongly
-              want to contribute in linux kernel project in future.
+            Let's talk about something else about me. I was born on February 21 
+            in Gazipur, Bangladesh. But I grow up in Dhaka. Love to read books 
+            and also love to travel. 
             </p>
             <div className="mg-t5">
               <a
